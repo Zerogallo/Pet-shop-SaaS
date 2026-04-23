@@ -1,0 +1,24 @@
+pet-shop-saas/
+├── backend/
+│   ├── src/
+│   │   ├── auth/          # autenticação JWT
+│   │   ├── users/         # usuários (proprietários/funcionários)
+│   │   ├── pets/          # prontuário eletrônico
+│   │   ├── appointments/  # agendamentos
+│   │   ├── products/      # gestão de produtos
+│   │   ├── main.ts
+│   │   └── app.module.ts
+│   ├── .env
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Header, Sidebar, etc.
+│   │   ├── pages/         # Dashboard, Agenda, Pets, Produtos
+│   │   ├── services/      # api.js (axios)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+└── README.md (instruções)
