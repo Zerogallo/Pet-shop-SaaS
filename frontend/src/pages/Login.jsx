@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
+import { Link } from 'react-router-dom';
+
+import img from '../assets/logo.png';
+
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -20,9 +24,9 @@ export default function Login() {
     };
 
     return (
-        <div className="container" style={{ maxWidth: '400px', marginTop: '5rem' }}>
+        <div className="container" style={{ maxWidth: '500px', marginTop: '1rem' }}>
             <div className="card">
-                <h2>Login - Pet Shop</h2>
+                <img src={img} alt="Login" className="login-image" style={{ width: '400px', height: '400px', marginRight: '0.5rem' }} />
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 <form onSubmit={handleSubmit}>
                     <input
@@ -42,7 +46,12 @@ export default function Login() {
                         style={{ width: '100%', marginBottom: '1rem' }}
                     />
                     <button type="submit" style={{ width: '100%' }}>Entrar</button>
+
+
                 </form>
+                <p style={{ marginTop: '1rem', textAlign: 'center' }}>
+                    Não tem uma conta? <Link to="/register">Cadastre-se</Link>
+                </p>
             </div>
         </div>
     );

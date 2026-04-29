@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import api from '../services/api';
+import { CiBoxes } from 'react-icons/ci';
+import { SlPencil } from "react-icons/sl";
+import { MdDelete } from 'react-icons/md';
 
 export default function Products() {
     const [products, setProducts] = useState([]);
@@ -38,7 +41,7 @@ export default function Products() {
 
     return (
         <div className="container">
-            <h2>Produtos</h2>
+            <h2><CiBoxes /> Produtos</h2>
             <div className="card">
                 <div style={{ display: 'grid', gap: '0.5rem', gridTemplateColumns: 'repeat(auto-fill, minmax(180px,1fr))' }}>
                     <input placeholder="Nome" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
@@ -59,7 +62,7 @@ export default function Products() {
                     {products.map(p => (
                         <tr key={p.id} style={{ borderTop: '1px solid #ddd' }}>
                             <td>{p.name}</td><td>{p.category}</td><td>R$ {p.price}</td><td>{p.stock}</td>
-                            <td><button onClick={() => editProduct(p)}>✏️</button> <button onClick={() => deleteProduct(p.id)}>🗑️</button></td>
+                            <td><button onClick={() => editProduct(p)}><SlPencil /> Editar</button> <button onClick={() => deleteProduct(p.id)}><MdDelete /> Deletar</button></td>
                         </tr>
                     ))}
                 </tbody>

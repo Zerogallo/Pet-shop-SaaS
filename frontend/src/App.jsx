@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Header from './components/Header';
 import Login from './pages/Login';
+import Register from './pages/Register';        // <-- importe a nova página
 import Dashboard from './pages/Dashboard';
 import Appointments from './pages/Appointments';
 import Pets from './pages/Pets';
 import Products from './pages/Products';
+import Header from './components/Header';
 
 function PrivateRoute({ children }) {
-  return localStorage.getItem('token') ? children : <Navigate to="/login" />;
+  const token = localStorage.getItem('token');
+  return token ? children : <Navigate to="/login" />;
 }
 
 function Layout({ children }) {
@@ -24,6 +26,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />   {/* <-- nova rota */}
         <Route path="/" element={
           <PrivateRoute>
             <Layout><Dashboard /></Layout>

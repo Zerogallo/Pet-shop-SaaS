@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import api from '../services/api';
+import { TfiAgenda } from 'react-icons/tfi';
 
 export default function Appointments() {
     const [appointments, setAppointments] = useState([]);
@@ -25,7 +26,7 @@ export default function Appointments() {
 
     return (
         <div className="container">
-            <h2>Agendamentos</h2>
+            <h2><TfiAgenda /> Agendamentos</h2>
             <div className="card">
                 <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                     <select value={form.petId} onChange={e => setForm({ ...form, petId: e.target.value })} required>
@@ -37,7 +38,7 @@ export default function Appointments() {
                     <input type="date" value={form.date} onChange={e => setForm({ ...form, date: e.target.value })} required />
                     <input type="time" value={form.time} onChange={e => setForm({ ...form, time: e.target.value })} required />
                     <input placeholder="Serviço" value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} required />
-                    <button type="submit">Agendar</button>
+                    <button type="submit"><TfiAgenda /> Agendar</button>
                 </form>
             </div>
             {appointments.map(apt => (
