@@ -62,3 +62,17 @@ npm run dev
 
 Desenvolvido como projeto para um cliente do setor pet.
 Disponível para novas oportunidades – entre em contato via LinkedIn ou e‑mail.
+
+## Estou disponível para novos desafios!
+
+Se você precisa de um desenvolvedor fullstack para:
+
+· Projetos freelancers
+· Contratação PJ ou CLT
+· Consultoria ou mentoria em React / Node / NestJS
+
+Vamos conversar! 👇
+💬 Me chama no direct ou comenta que eu entro em contato.
+
+🔗 Repositório do projeto: [Acessar](https://portfoliorenanfullstack.onrender.com)
+👨‍💻 Meu LinkedIn: [Ver todos](www.linkedin.com/in/renan-ferreira-full-stack)
