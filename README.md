@@ -66,12 +66,12 @@ Disponível para novas oportunidades – entre em contato via LinkedIn ou e‑ma
 ## Estou disponível para novos desafios!
 
 Se você precisa de um desenvolvedor fullstack para:
-
+```bash
 · Projetos freelancers
 · Contratação PJ ou CLT
 · Consultoria ou mentoria em React / Node / NestJS
-
-Vamos conversar! 👇
+```
+# Vamos conversar! 👇
 💬 Me chama no direct ou comenta que eu entro em contato.
 
 🔗 Repositório do projeto: [Acessar](https://portfoliorenanfullstack.onrender.com)
