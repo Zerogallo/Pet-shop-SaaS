@@ -58,7 +58,7 @@ export default function Dashboard() {
         <div className="container">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
                 <h1><RxDashboard />  Painel do Pet Shop</h1>
-                <button onClick={logout}><MdOutlineExitToApp /> Sair</button>
+
             </div>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
