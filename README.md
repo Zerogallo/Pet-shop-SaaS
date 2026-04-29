@@ -75,4 +75,4 @@ Se você precisa de um desenvolvedor fullstack para:
 💬 Me chama no direct ou comenta que eu entro em contato.
 
 🔗 Repositório do projeto: [Acessar](https://portfoliorenanfullstack.onrender.com)
-👨‍💻 Meu LinkedIn: [Ver todos](www.linkedin.com/in/renan-ferreira-full-stack)
+👨‍💻 Meu LinkedIn: [Ver todos](https://www.linkedin.com/in/renan-ferreira-full-stack)
